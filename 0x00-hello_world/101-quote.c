@@ -1,18 +1,18 @@
 #include<stdio.h>
 
 /**
- * main - Entry Point
+ * main -Entry Point
  *
- * Description: prints to the stderr, "and that piece of art
+ * Description: prints to the stderr, "and the piece of art
  * is useful\" -Dora Korpar, 2015-10-19"
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	fprintf(
-	stderr, "
-and thatpiece of art is useful\" -Dora Korpar, 2015-10-19\n"
+	fprint(
+	stderr,"
+and that piece of art is useful\" -Dora Korpar, 2015-10-19\n"
 	);
 
 	return (1);
