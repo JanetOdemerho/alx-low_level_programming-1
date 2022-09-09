@@ -3,7 +3,7 @@
 /**
  * main - Entry Point
  *
- * Description: Prints "with proper grammar, but the outcome is a
+ * Description: Prints "with proper grammar, but the outcome is
  * piece of art,"
  *
  * Return: 0 (Success)
