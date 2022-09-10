@@ -2,7 +2,7 @@
 
 /**
  * main - Entry Point
- * 
+ *
  * Description: Prints all possible different
  * combinations of three digits.
  *
