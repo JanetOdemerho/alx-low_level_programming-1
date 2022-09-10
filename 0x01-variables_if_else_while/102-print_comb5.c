@@ -2,7 +2,6 @@
 
 /**
  * main - Entry Point
- * 
  * Description: Prints all possible combinations
  * of two two-digit numbers.
  *
