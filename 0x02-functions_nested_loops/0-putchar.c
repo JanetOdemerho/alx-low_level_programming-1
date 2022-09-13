@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - Entry Point
+ * main - entry point
  *
  * Description: A program that prints _putchar,
  * followed by a new line.
  *
- * Return: 0(Success)
+ * Return 0 (success)
  */
 
 int main(void)
@@ -24,3 +24,4 @@ int main(void)
 
 	return (0);
 }
+
