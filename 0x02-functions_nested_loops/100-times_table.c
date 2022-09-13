@@ -7,7 +7,7 @@
  * returns - void
  */
 
-void print_times_table(int n)
+void print_times_table - outputs times tables 9x9
 {
 	int row, col, p;
 
