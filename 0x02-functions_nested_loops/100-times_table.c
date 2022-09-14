@@ -1,51 +1,47 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_times_table - outputs times tables 9x9
- * @n: column and row size (always the same)
- * returns - void
+ * print_times_table - prints the n times table, starting with 0
+ * @n: number of the times table
  */
-
 void print_times_table(int n)
 {
-	int row, col, p;
-	if (n <= 15 && n > 0)
+	int i, j, k;
+	if (n >= 0 && n <= 15)
 	{
-		for (row = 0; row <= n; ++row)
+		for (i = 0; i <= n; i++)
 		{
-			putchar('0');
-			_putchar(',');
-			for (col = 1; col <= n; ++col)
+			for (j = 0; j <= n; j++)
 			{
-				p = col * row;
-				_putchar(' ');
-				if (p / 100  >= 1)
+				k = j * i;
+				if (j == 0)
 				{
-
-					_putchar('0' + p / 100);
-					putchar('0' + p / 10 % 10);
-					_putchar('0' + p % 10);
-				}
-				else if (p / 10 >= 1)
+					_putchar(k + '0');
+				} else if (k < 10 && j != 0)
 				{
-					_putchar(' ');
-					_putchar('0' + p / 10);
-					_putchar('0' + p % 10);
-				}
-				else
-				{
-					_putchar(' ');
-					_putchar(' ');
-					putchar('0' + p);
-				}
-				if (col < n)
 					_putchar(',');
-				else
-					_putchar('\n');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					putchar(k + '0');
+				} else if (k >= 10 && k < 100)
+				{
+					putchar(',');
+					_putchar(' ');
+					putchar(' ');
+					_putchar((k / 10) + '0');
+					_putchar((k % 10) + '0');
+				} else if (k >= 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar((k / 100) + '0');
+					_putchar(((k / 10) % 10) + '0');
+					_putchar((k % 10) + '0')
+				}
 			}
+			_putchar('\n');
 		}
 	}
 }
 				
-
