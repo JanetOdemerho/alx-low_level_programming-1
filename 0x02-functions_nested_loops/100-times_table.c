@@ -7,15 +7,14 @@
  * returns - void
  */
 
-void print_times_table - outputs times tables 9x9
+void print_times_table(int n)
 {
 	int row, col, p;
-
 	if (n <= 15 && n > 0)
 	{
 		for (row = 0; row <= n; ++row)
 		{
-			_putchar('0');
+			putchar('0');
 			_putchar(',');
 			for (col = 1; col <= n; ++col)
 			{
@@ -23,15 +22,22 @@ void print_times_table - outputs times tables 9x9
 				_putchar(' ');
 				if (p / 100  >= 1)
 				{
+
 					_putchar('0' + p / 100);
-					_putchar('0' + p / 10 % 10);
+					putchar('0' + p / 10 % 10);
 					_putchar('0' + p % 10);
 				}
 				else if (p / 10 >= 1)
 				{
 					_putchar(' ');
+					_putchar('0' + p / 10);
+					_putchar('0' + p % 10);
+				}
+				else
+				{
 					_putchar(' ');
-					_putchar('0' + p);
+					_putchar(' ');
+					putchar('0' + p);
 				}
 				if (col < n)
 					_putchar(',');
@@ -41,3 +47,5 @@ void print_times_table - outputs times tables 9x9
 		}
 	}
 }
+				
+
